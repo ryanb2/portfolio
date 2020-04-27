@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  background-color: lightslategray;
+  min-height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.App-nav a {
+  color: white;
+}
+
+.App-body {
+  // padding: 20px 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
