@@ -1,7 +1,12 @@
 .App {
-  text-align: center;
-  background-color: lightslategray;
   min-height: 100vh;
+  padding: 0 25vw;
+  @media (max-width: 1080px) {
+    padding: 0;
+  }
+  @media (min-width: 2000px) {
+    padding: 0 30vw;
+  }
 }
 
 .App-header {

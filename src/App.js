@@ -9,11 +9,13 @@ import Home from './components/Home';
 import Interests from './components/Interests';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Banner from './components/Banner';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
+      <Banner />
       <Router>
         <header className="App-header">
           <h1>Brendan Ryan</h1>
