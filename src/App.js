@@ -6,7 +6,7 @@ import {
   Link
 } from 'react-router-dom';
 import Home from './components/Home';
-import Interests from './components/Interests';
+import Interests from './components/interests/Interests';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Banner from './components/Banner';
