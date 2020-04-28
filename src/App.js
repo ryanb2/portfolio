@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Switch,
   Route,
   Link
@@ -20,26 +20,18 @@ function App() {
         <header className="App-header">
           <h1>Brendan Ryan</h1>
           <nav className="App-nav">
-            <Link to="/">Home</Link>{ ` | ` }
-            <Link to="/interests">Interests</Link>{ ` | ` }
-            <Link to="/projects">Projects</Link>{ ` | ` }
-            <Link to="/contact">Contact</Link>
+            <Link to="/portfolio/">Home</Link>{ ` | ` }
+            <Link to="/portfolio/interests">Interests</Link>{ ` | ` }
+            <Link to="/portfolio/projects">Projects</Link>{ ` | ` }
+            <Link to="/portfolio/contact">Contact</Link>
           </nav>
         </header>
         <section className="App-body">
           <Switch>
-            <Route path="/interests">
-              <Interests />
-            </Route>
-            <Route path="/projects">
-              <Projects />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-            <Route path="/">
-              <Home />
-            </Route>
+            <Route path="/portfolio/interests" component={ Interests } />
+            <Route path="/portfolio/projects" component={ Projects } />
+            <Route path="/portfolio/contact" component={ Contact } />
+            <Route path="/portfolio" component={ Home } />
           </Switch>
         </section>
       </Router>
